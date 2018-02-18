@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/winnie1312/winnie1312.github.io/issues"
   },
-  "homepage": "https://github.com/winnie1312/winnie1312.github.io#readme",
-  "dependencies": {
-    "hexo-renderer-scss": "^1.1.0"
-  }
+  "homepage": "https://github.com/winnie1312/winnie1312.github.io#readme"
 }
