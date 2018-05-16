@@ -14,9 +14,7 @@ $(document).ready(function(){
   });
 
 
-  // $(window).on("scroll", function () {
-  //   $(".project-item").addClass("animated slideInUp");
-  // })
+
   
   // hover project items
   $('.item-1, .item-2, .item-3, .item-4, .item-5, .item-6').hover(function() {
@@ -48,7 +46,32 @@ $(document).ready(function(){
     window.location.href = 'mailto:nhuphan0404@gmail.com';
   })
   
-  // animation
+ 
+
+
+  /* move to nav item target */
+  $(".about-navItem").on("click", function() {
+    $('html, body').animate({
+      scrollTop: $("#about-me-area").offset().top
+    }, 1000);
+    $(".navbar-collapse").removeClass("show");
+  });
+
+  $(".portfolio-navItem").on("click", function() {
+    $('html, body').animate({
+      scrollTop: $("#portfolio").offset().top
+    }, 1000);
+    $(".navbar-collapse").removeClass("show");
+  });
+
+  $(".contact-navItem").on("click", function() {
+    $('html, body').animate({
+      scrollTop: $("#contact").offset().top
+    }, 1000);
+    $(".navbar-collapse").removeClass("show");
+
+  });
+
 
   // $(window).on("scroll", function () {
   //   $(".slide-left-h4, .slide-icons").addClass("animated slideInLeft");
@@ -63,8 +86,26 @@ $(document).ready(function(){
     if($("#portfolio").position().top < $(window).scrollTop() + 700) {
       console.log('helloo!!!!');
       $(".project-animated").addClass("animated slideInRight");
+
+      let x = 500;
+      // $(".project-item").hide();
+        $(".project-item").each(function(){
+          console.log("hi",x);
+          setTimeout(function() {
+            $(".project-item").show();
+          }, x += 3000); 
+        });  
+      
+
+      
+      
     }
     
+
+  
+
+
+
   });
 
 

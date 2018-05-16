@@ -89,6 +89,11 @@ nav {
   font-size: 12px;
 }
 
+.navbar .navbar-toggler {
+  
+  background-color: #00C3BD;
+  
+}
 
 /* HERO IMAGE */
 section.hero-image {
@@ -104,13 +109,14 @@ section.hero-image {
 .photo {
   height: 250px;
   width: 250px;
-  border-radius: 50%;
-  background-image: url("./img/photo.JPG");
+  border-radius: 50%; 
+  /* background-image: url("./img/photo.JPG"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden; 
- 
+  border: 2px solid #00C3BD;
+  padding: 15px;
 }
 
 .hero-text {
@@ -121,7 +127,7 @@ section.hero-image {
 .hero-text h1 {
   letter-spacing: 30px;
   font-size: 50px !important;
-  color: #00C3BD;
+  color: #fff;
 }
 
 .hero-text h5 {
@@ -131,11 +137,7 @@ section.hero-image {
   color: #fff;
 }
 
-
-/* particles */
-
-/* ---- reset ---- */
-
+/* particles in hero-image*/
 body {
   margin: 0;
   font:normal 75% Arial, Helvetica, sans-serif;
@@ -143,7 +145,7 @@ body {
 
 canvas {
   display: block;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 
 /* ---- particles.js container ---- */
@@ -281,6 +283,7 @@ h4.about-title {
   width: 100%;
   overflow: hidden;
 }
+
 .project-item h5 {
   letter-spacing: 3px;
   color: #bcbcbc;
