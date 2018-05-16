@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ride Hailing Platform: Bikes, cars and taxi booking | Grab</title>
+    <!--style link-->
+    <link type="text/css" rel="stylesheet" href="./style.css">    
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--jquery n BOOTSTRAP link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--js link-->
+    <script src="./script.js"></script>
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="left-nav navs"> 
+        <ul class="nav-list">
+          <li><a href="#"><img class="logo" src="./img/Grab_logo.png"></a></li>
+          <li><a href="#">Vietnam <i class="fa fa-angle-down"></i></a></li>
+          <li><a href="#">Services <i class="fa fa-angle-down"></i></a></li>
+          <li><a href="#">Corporate <i class="fa fa-angle-down"></i></a></li>
+          <li><a href="https://www.grab.com/vn/en/grabpay/" target="_blank"><img class="grabpay-topnav" src="./img/grabpay_topnav.png"></a></li>
+        </ul>
+      </div>
+      <div class="right-nav navs">
+        <ul class="nav-list">
+          <li><button type="button" class="button-topnav">Drive with Grab <i class="fa fa-angle-down"></i></button></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#" class="diff">Login</a></li>
+          <li><a href="#" class="diff line">|</a></li>
+          <li><a href="#">English <i class="fa fa-angle-down"></i></a></li>
+        </ul>
+      </div>
+    </nav>   
+    <div id="carouselBanners" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselBanners" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselBanners" data-slide-to="1"></li>
+        <li data-target="#carouselBanners" data-slide-to="2"></li>
+        <li data-target="#carouselBanners" data-slide-to="3"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./img/hero-grabrewards.jpg" alt="First slide">
+          <div class="carousel-caption caption-banner">
+            <h1>Discover GrabRewards, get more free trip</h1>
+            <a class="btn btn-primary text-capital">explore grabrewards</a>
+          </div>    
+        </div>
+        <div class="item">
+          <img src="./img/01_hero_banner.jpg" alt="Second slide">
+          <div class="carousel-caption caption-banner">
+            <h1>GrabTaxi. GrabCar. GrabBike. GrabExpress.</h1>
+            <p>All in one app.</p>
+            <a class="btn btn-primary text-capital">download now!</a>
+          </div>   
+        </div>
+        <div class="item">
+          <img src="./img/02_hero_banner.jpg" alt="Third slide">
+          <div class="carousel-caption caption-banner">
+            <h1>OVER 11 MILLION PASSENGERS, 200,000 DRIVERS. SET FREE.</h1>
+            <a class="btn btn-primary text-capital">find out more</a>
+          </div>   
+        </div>
+        <div class="item">
+          <img src="./img/driver.jpg" alt="Fourth slide">
+          <div class="carousel-caption caption-banner">
+            <h1>EARN. CONNECT. CONTRIBUTE TO SOCIETY.</h1>
+            <p>Partner with us to drive your own livelihood and more.</p>
+            <a class="btn btn-primary text-capital">sign up now</a>
+          </div>   
+        </div>
+      </div>
+
+          <!-- Left and right controls -->
+      <a class="left carousel-control" href="#carouselBanners" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span> 
+      </a>
+      <a class="right carousel-control" href="#carouselBanners" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <section id="section-2">
+      <header>
+        <h2>How Grab Works</h2>
+        <p>Use Grab to go anywhere freely</p>
+      </header>
+      <div class="slide-phone"> 
+        <ol class="indicator-step">
+          <li>
+            <h4>Book in just 2 Taps</h4>
+            <p>Key in your pick-up and drop-off locations to get your estimated fare.</p>
+          </li>
+          <li>
+            <h4>Get a Driver</h4>
+            <p>Grab will find you the nearest available driver.</p>
+          </li>
+          <li>
+            <h4>Track Your Driver</h4>
+            <p>Know your driver’s location and ETA in real-time.</p>
+          </li>
+          <li>
+            <h4>Arrive Safely</h4>
+            <p>Share your trip details with loved ones for added safety or even just to let them know you’re on your way.</p>
+          </li>
+        </ol>
+        <div id="carousel-bg" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-bg" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-bg" data-slide-to="1"></li>
+            <li data-target="#carousel-bg" data-slide-to="2"></li>
+            <li data-target="#carousel-bg" data-slide-to="3"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner howto-image">
+            <div class="item active howto">
+              <img src="./img/1_step-1.jpg" alt="first">
+            </div>
+            <div class="item howto">
+              <img src="./img/2_step-1.jpg" alt="Second">
+            </div>
+            <div class="item howto">
+              <img src="./img/3_step-1.jpg" alt="third">
+            </div>
+            <div class="item howto">
+              <img src="./img/4_step-1.jpg" alt="fourth">
+            </div>
+          </div>
+        </div>
+        <div class="hand-img"></div>
+      </div>
+    </section>
+
+    <section id="section-3" class="container-fluid text-center">
+      <h2>What you should know before your first Grab ride</h2>
+      <a class="btn btn-primary" href="https://www.grab.com/vn/en/rideguide/" target="_blank">CLICK TO LEARN</a>
+    </section>
+
+    <section id="section-4">
+      <header>
+        <h2 class="text-center">FREEDOM TO CHOOSE</h2>
+        <p class="text-center">A wide range of services to suit all your transport needs. Click the icons to find out more about our services.</p>
+      </header>
+
+      <div id="homepage-services" class="carousel slide" data-ride="carousel">
+         <!-- indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#homepage-services" data-slide-to="0" class="active">
+          </li>
+          <li data-target="#homepage-services" data-slide-to="1"></li>
+          <li data-target="#homepage-services" data-slide-to="2"></li>
+          <li data-target="#homepage-services" data-slide-to="3"></li>
+        </ol>
+           <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active services">
+            <img src="./img/taxi-2-2.jpg" alt="First slide">
+            <div class="carousel-caption caption-service">
+              <h1>GrabTaxi</h1>
+              <p>Our largest pool of taxi fleets in Vietnam 
+                that give you the freedom to travel from almost anywhere, 
+                at anytime.</p>
+                <a href="https://www.grab.com/vn/en/taxi/"><span></span></a>
+            </div>
+          </div>
+          <div class="item services">
+            <img src="./img/car-2-2.jpg" alt="Second slide">
+            <div class="carousel-caption caption-service">
+              <h1>GrabCar</h1>
+              <p>Licensed private vehicles that 
+                  give you the freedom to do all 
+                  the interesting things in life with comfort.</p>
+              <a href="https://www.grab.com/vn/en/car/"><span></span></a>
+            </div>
+          </div>
+          <div class="item services">
+            <img src="./img/bike-2-2.jpg" alt="Third slide">
+            <div class="carousel-caption caption-service">
+              <h1>GrabBike</h1>
+              <p>Our largest local motorbike taxi service 
+                that give you the freedom to move around the city
+                conveniently.</p>
+              <a href="https://www.grab.com/vn/en/bike/"><span></span></a>
+            </div>
+          </div>
+          <div class="item services">
+            <img src="./img/express-2-2.jpg" alt="Fourth slide">
+            <div class="carousel-caption caption-service">
+              <h1>GrabExpress</h1>
+              <p>Our express service is right at your fingertip,
+                giving you the freedom to give and take all your
+                personal items without waiting.</p>
+              <a href="https://www.grab.com/vn/en/express/"><span></span></a>
+            </div>
+          </div>
+        </div>
+          <!-- Left and right controls -->
+        <a class="left carousel-control" href="#homepage-services" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span> 
+        </a>
+        <a class="right carousel-control" href="#homepage-services" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </section>
+    <section id="section-5">
+      <header>
+        <h2 class="text-center">Download Grab</h2>
+      </header>
+      <div class="center-block">
+        <div class="qr-code">
+          <span class="block">Scan QR Code</span>
+          <img class="img-qr-code" src="./img/pax_vn.jpg">
+        </div>
+        <div class="download-stores">
+          <a class="bottom-margin" href="https://itunes.apple.com/SG/app/id647268330?mt=8" target="_blank"><img src="./img/app-store.png"></a>
+          <a class="bottom-margin" href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&referrer=af_tranid%3Ds3BxHqJw1bZhfVzDH1OOow%26pid%3DVN-Website-ADR-Install_Button%26c%3DWebsite_Download%26utm_source%3DVN-Website-ADR-Install_Button%26utm_campaign%3DWebsite_Download" target="_blank">
+            <img src="./img/google-play.png"></a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="section-6">
+      <header>
+        <h2 class="text-center">Latest News</h2>
+        <p class="text-center">Explore the world of Grab</p>
+      </header>
+      <div class="row">
+        <div class="col-md-8 news">
+          <a href="https://www.grab.com/vn/en/press/business/uber-dong-nam-a-chinh-thuc-sap-nhap-vao-grab/" target="_blank">
+            <div class="area-1-1 bottom-margin">
+              <div class="blurb">
+                <span class="date">March 26, 2018</span>
+                <span class="weight-bold">Grab Merges with Uber in Southeast Asia</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 news">
+          <a href="https://www.grab.com/vn/en/press/business/grab-va-samsung-ky-ket-bien-ban-ghi-nho-thuc-day-phat-trien-ky-thuat-so-o-dong-nam-a/" target="_blank">
+            <div class="area-1-2 bottom-margin">
+              <div class="blurb">
+                <span class="date">March 22, 2018</span>
+                <span class="weight-bold">Grab and Samsung Sign MOU to Drive Digital Inclusion in Southeast Asia</span>
+              </div>
+            </div>
+          </a>  
+        </div>
+        <div class="col-md-4 news">
+          <a href="https://www.grab.com/vn/en/press/social-impact-safety/grab-viet-nam-to-chuc-hoi-xuan-mau-tuat-2018/" target="_blank">
+            <div class="area-2-1 bottom-margin">
+              <div class="blurb">
+                <span class="date">January 31, 2018</span>
+                <span class="weight-bold">LUNAR NEW YEAR WITH GRAB VIETNAM</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 news">
+          <a href="https://www.grab.com/vn/en/press/social-impact-safety/cung-grab-chung-tay-cho-tet-ve-gan/" target="_blank">
+            <div class="area-2-2 bottom-margin">
+              <div class="blurb">
+                <span class="date">January 18, 2018</span>
+                <span class="weight-bold">CELEBRATE TET WITH GRAB</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 news">
+          <a href="https://www.grab.com/vn/en/press/business/grab-cong-bo-mua-lai-cong-ty-khoi-nghiep-trong-linh-vuc-thanh-toan-ikaaz/" target="_blank">
+            <div class="area-2-3 bottom-margin">
+              <div class="blurb">
+                <span class="date">January 17, 2018</span>
+                <span class="weight-bold">Grab Announces Acquisition of Bangalore-based Payments Startup iKaaz</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="button-view-more text-center">
+        <a class="btn btn-primary" href="https://www.grab.com/vn/en/press/" target="_blank">View More</a>
+      </div>
+    </section>
+    
+    <section class="sitemap">
+      <div class="row">
+        <div class="footer-upper">
+          <div class="col-md-3">
+            <div class="about-grab">
+              <div class="grab-logo">
+                <a href="https://www.grab.com/vn/en/" target="_blank">
+                  <img src="./img/grab-white.png">
+                </a>
+              </div>
+              <div class="grab-information">
+                <p>
+                    Công Ty TNHH GrabTaxi 
+                    - 268 Tô Hiến Thành, P.15, Q.10, 
+                    TP Hồ Chí Minh
+                    </br>
+                    Mã số doanh nghiệp: 0312650437
+                    </br>
+                    Đại Diện Công Ty: Lim Yen Hock
+                    </br>
+                    Chức vụ: Giám Đốc
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row sitemap-container">
+              <div class="col-md-3">
+                <h4 class="text-capital">company</h4>
+                <ul class="sitemapList">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Driver Center</a></li>
+                </ul>
+              </div>
+              
+              <div class="col-md-3">
+                <h4 class="text-capital">services</h4>
+                <ul class="sitemapList">
+                  <li>
+                    <a href="#">GrabTaxi</a>
+                  </li>
+                  <li>
+                    <a href="#">GrabCar</a>
+                  </li>
+                  <li>
+                    <a href="#">GrabBike</a>
+                  </li>
+                  <li>
+                    <a href="#">GrabExpress</a>
+                  </li>
+                  <li>
+                    <a href="#">GrabShare</a>
+                  </li>
+                  <li>
+                    <a href="#">JustGrab</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4 class="text-capital">corporate</h4>
+                <ul class="sitemapList">
+                  <li>
+                    <a href="#">Grab for Business</a>
+                  </li>
+                  <li>
+                    <a href="#">Partnerships</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4 class="text-capital">ride</h4>
+                <ul class="sitemapList">
+                  <li class="check">
+                    <a href="#">Drive</a>
+                  </li>
+                  <li>
+                    <a href="#">Safety</a>
+                  </li>
+                  <li>
+                    <a href="#">Help Center</a>
+                  </li>
+                </ul>
+              </div> 
+            </div>
+            <div class="row">
+              <div class="col-md-offset-9">
+                <div>
+                  <a href="#" target="_blank">
+                    <img class="registered" src="./img/20150827110756-dadangky.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 bottom-line"></div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-capital text-center social-area">stay in touch</h4>
+        <div class="text-center">
+          <a href="https://www.facebook.com/grabvn" target="_blank"><i class="fa fa-facebook circle fa-2x"></i></a> 
+          <a href="https://www.instagram.com/grabvn/" target="_blank"><i class="fa fa-instagram circle fa-2x"></i></a>
+          <a href="https://www.instagram.com/grabvn/" target="_blank"><i class="fa fa-twitter circle fa-2x"></i></a>
+        </div>
+      </div>
+    </section>
+    
+    <div id="bottom">
+      <div>
+        <p>Copyright <i class="fa fa-copyright"></i> 2018 
+        | GRAB <i class="fa fa-registered"></i>
+        | All rights reserved.
+        </p>
+      </div>
+      <div>
+        <p> Coded by <a id="author" href="https://github.com/winnie1312" target="_blank" id="winnie-github">
+          Winnie</a> with <i class="fa fa-coffee"></i> and <i class="fa fa-music"></i>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
