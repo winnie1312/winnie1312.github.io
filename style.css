@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* start CSS */
+.font-dosis {
+  font-family: 'Dosis', sans-serif;
+}
+
+/* NAV */
+nav {
+  background-color: #333;
+  position: absolute;
+}
+
+/* fix nav when scroll */
+.fixed.active {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100; 
+}
+
+
+.nav-item a {
+  font-size: 16px;
+  color: #fff !important;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 4px;
+}
+
+a.home-navItem {
+  color: #00C3BD !important;
+}
+
+.nav-item a:hover {
+  color: #00C3BD !important;
+}
+#navbarToggler {
+  letter-spacing: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+
+/* HERO IMAGE */
+#hero-image {
+  /* background-image: url("http://www.sergushkin.com/wp-content/uploads/2017/03/@1xBanner_2-Copy-3.png"); */
+  background-image: url("./img/lauren-mancke-60627-unsplash.jpg");
+  opacity: 0.8;
+  height: 850px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden; 
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+}
+.hero-text h1 {
+  letter-spacing: 30px;
+  font-size: 50px !important;
+}
+
+.hero-text h5 {
+  letter-spacing: 5px;
+  font-size: 18px !important;
+  line-height: 25px;
+}
+
+/* ABOUT ME */
+#about-me-area {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.about-me {
+  padding-bottom: 50px;
+}
+
+h4.about-title {
+  line-height: 22px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  
+}
+
+.underline {
+  border-bottom: 2px solid #00C3BD;
+  padding-bottom: 10px;
+}
+
+.skill-texts {
+  color: #777;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.about-me-content {
+  padding-top: 50px;
+  color: #777;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+/* SKILL AREA */
+.skill-title {
+  font-size: 20px;
+}
+
+.skill-blue-text {
+  color: #00C3BD;
+}
+
+.skill-column {
+  border-radius: 10px;
+  background: #fff;
+  border: 2px solid #00C3BD;
+  z-index: 20;
+  /* box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);  */
+}
+
+.skill-inner-div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  padding-top: 70px;
+  margin-bottom: 150px;
+}
+
+.at-coderschool {
+  margin-bottom: 70px;
+}
+
+.at-coderschool h4 {
+  line-height: 22px;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+#portfolio-title {
+  background-image: url("./img/rawpixel-565462-unsplash.jpg");
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 11%;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+#portfolio-title a {
+  text-decoration: none;
+}
+
+#portfolio-title a:hover {
+  text-decoration: none;
+}
+
+.inner-content {
+  padding-top: 70px;
+}
+
+.port-small-text {
+  letter-spacing: 2px;
+  
+}
+
+.port-big-text {
+  font-size: 25px;
+  letter-spacing: 5px;
+  
+}
+/* PORTFOLIO MAIN*/
+.project-item {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+.project-item h5 {
+  letter-spacing: 3px;
+  color: #bcbcbc;
+}
+
+.project-item p {
+  color: #bcbcbc;
+  font-size: 14px;
+}
+
+.project-item a.btn {
+  border: 1px solid #00C3BD;
+  color: #00C3BD;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 12px 40px;
+}
+
+.project-item a.btn:hover {
+  background-color: #00C3BD;
+  color: #f8f8f8;
+}
+
+.item-1 {
+  background-image: url("./img/project-1.png");
+}
+
+.item-2 {
+  background-image: url("./img/project-2.png");
+}
+
+.item-3 {
+  background-image: url("./img/project-3.png");
+}
+
+.item-4 {
+  background-image: url("./img/project-4.png");
+}
+.item-5 {
+  background: url("https://i.imgur.com/qrt13iK.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item-6 {
+  background-image: url("./img/project-6.png");
+}
+
+/* hover project items */
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6:hover {
+  cursor: pointer;
+}
+
+.item-1-hide,
+.item-2-hide,
+.item-3-hide,
+.item-4-hide,
+.item-5-hide,
+.item-6-hide {
+  display: none;
+}
+
+.item-1-hide.hovered, 
+.item-2-hide.hovered,
+.item-3-hide.hovered,
+.item-4-hide.hovered,
+.item-5-hide.hovered,
+.item-6-hide.hovered {
+  display: block;
+  color: #fff;
+}
+
+.item-1.background-hide,
+.item-2.background-hide,
+.item-3.background-hide,
+.item-4.background-hide,
+.item-5.background-hide,
+.item-6.background-hide {
+  background-image: none;
+  background: #333;
+  
+  
+}
+
+/* FOOTER */
+footer {
+  padding-top: 50px;
+  height: 500px;
+  background-color: #333;
+  position: relative;
+  color: #fff;
+}
+
+/* CONTACT in FOOTER*/
+a.btn {
+  padding: 12px 40px;
+  border-radius: 50px;
+  color: #00C3BD;
+  border: 1px solid #00C3BD;
+} 
+
+a.btn:hover {
+  background-color: #00C3BD;
+  color: #fff;
+}
+/* </CONTACT FORM> */
+.quote h5, .quote small {
+  letter-spacing: 3px;
+}
+
+.foot-bottom {
+  color:  rgba(255, 255, 255, 0.5);
+}
+.foot-bottom small {
+  letter-spacing: 2px;
+}
+
+.social-icon-list i.fa {
+  font-size: 20px;
+  color: #F8F8F8;
+  border: 2px solid #F8F8F8;
+  border-radius: 50%;
+  padding: 0.9rem 1rem; 
+}
+
+.social-icon-list i.fa:hover {
+  color: #00C3BD;
+  border: 2px solid #00C3BD;
+  opacity: 0.8;
+}
+
+.link-unstyled {
+  text-decoration: none;
+  color:  #00C3BD;
+}
+
+.link-unstyled:hover {
+  text-decoration: none;
+  color: #00C3BD;
+}
+
+@media screen and (max-width:600px) {
+  .project-item {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+  .project-item {
+    margin-bottom: 50px;
+    border-radius: 15px; 
+  }
+}
+
+/* 960 */
+
+@media screen and (min-width:767px) and (max-width:992px) {
+  .project-item {
+    margin-bottom: 50px;
+    border-radius: 15px; 
+  }
+  #portfolio {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+  #about-me-area {
+    padding-bottom: 50px;
+  }
+  #portfolio-title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:1024px) {}
+
+@media screen and (max-width:767px) {
+  #portfolio-title {
+    display: none;
+  }
+  #portfolio {
+    padding-top: 70px;
+    margin-bottom: 0;
+    border-top: 1px solid #c5c5c5;
+  }
+  .social-icon-list i.fa {
+    font-size: 14px;
+  }
+}
+
+

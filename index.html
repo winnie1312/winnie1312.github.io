@@ -1,392 +1,246 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ZEN LAB</title>
-    <!--favicon-->
-    <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--style link-->
-    <link type="text/css" rel="stylesheet" href="./css/style.css">    
-    <!--font awesome-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--jquery n BOOTSTRAP link-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!--font family-->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <!--OPEN-SAN-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!--noto serif-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-    <!--DOSIS FONT-->
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-  </head>
-  <body>
-    <!--NAV-->
-    <nav class="navbar navbar-custom navbar-transparent font-dosis navbar-light navbar-fix-top navbar-expand-lg navbar-expand-md">       
-      <div class="container">
-        <!--LOGO-->        
-        <a class="navbar-brand font-dosis" href="./index.html">ZEN LAB</a>
-        <!--ICON NAVBAR-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--/ICON NAVBAR-->
-        <div id="navbarToggler" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto ">
-            <li class="nav-item ml-3 pt-1">
-              <a class="nav-link text-uppercase "  href="#">about</a>
-            </li>
-            <li class="nav-item ml-3 pt-1">
-              <a class="nav-link text-uppercase"  href="#">blog</a>
-            </li>
-            <li class="nav-item ml-3 pt-1">
-              <!-- <a class="nav-link text-uppercase"  href="#">code lab</a> -->
-              <div class="dropdown">
-                  <a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">zen lab</a>                 
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Code lab</a>
-                    <a class="dropdown-item" href="#">Design lab</a>
-                    <a class="dropdown-item" href="#">Coffee lab</a>
-                  </div>
-              </div>
-            </li>
-            <li class="nav-item ml-3 pt-1">
-              <a class="nav-link text-uppercase" href="#">contact</a>
-            </li>
-            <!--SIGN UP-->
-            <li class="nav-item ml-3 pt-1">
-              <a class="nav-link text-uppercase" href="#" data-toggle="modal" data-target="#signUpModal">log in</a>
-                <!-- Modal -->
-                <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title text-uppercase" id="signUpModalTitle">log in</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <small class="font-italic text-muted" style="letter-spacing: 1px;"> Please log in to access full content</small>
-                          <div class="form-group mt-3">
-                            <input type="email" class="form-control text-uppercase" aria-describedby="emailHelp" placeholder="Your Email*">
-                          </div>  
-                          <div class="form-group">
-                            <input type="password" class="form-control text-uppercase" placeholder="password*">
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn border mx-auto text-uppercase font-dosis">log in</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>        
-            </li>
-          </ul>
-        </div>  
+<head>
+  <title>WINNIE PHAN</title>
+  <!--favicon-->
+  <link rel="icon" href="#" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--jquery n BOOTSTRAP link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!--font family-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <!--OPEN-SAN-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!--noto serif-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <!--DOSIS FONT-->
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <!-- <script src="./script.js"></script> -->
+</head>
+<body>
+
+  <!--HERO IMAGE-->   
+  <section id="hero-image" class="container-fluid">
+    <div class="row hero-text font-dosis text-center">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+        <h1 class="text-uppercase">winnie phan</h1>
+        <h5 class="text-uppercase mt-5"> I love to grow things organically, so what you know about me is just pure.</h5>
       </div>
-    </nav> 
-    <!--HERO IMAGE-->    
-    <section id="hero-image" class="container-fluid">
-      <div class="row hero-text text-white">
-        <div class="col-12 col-sm-12 col-md-5 col-lg-5 mx-auto cover-cell">
-          <a href="#" target="_blank" class="bottom-line text-white font-dosis"><small>ZENLAB</small></a>
-          <h1 class="font-dosis text-uppercase mt-2">Lorem ipsum dolor sit amet, a amet amet at, ullam metus</h1>
-          <p class="cover-p font-open-sans font-dosis-small">consectetur adipiscing elit</p>
-        </div>
-      </div>
-    </section>
-    <!-- ABOUT ME-->
-    <section>
-      <div class="container ">
-        <div class="row about-me border-bottom mx-auto">
-          <div class="about-me-text col-12 col-sm-12 col-md-7 col-lg-7">
-            <h4 class="about-me-title text-uppercase font-dosis">about us</h4>
-            <p class="font-open-sans about-me-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-          <div class="author-photo text-center col-12 col-sm-12 col-md-5 col-lg-5 py-auto">
-            <img src="http://t1.daumcdn.net/brunch/service/guest/image/0zF4AcFZrOYU8Senj-d138xBGPI.png">
-          </div>
-        </div>
-      </div>
-    </section>
-     <!--DAILY ARTICLES CONTAINER-->
-    <section id="daily-articles">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 mb-5 daily-tit">
-            <h4 class="text-center text-uppercase font-dosis">daily articles</h4>
-            <h6 class="text-muted text-center"><small>May 1st, 2018</small></h6>
-          </div>
-        </div>
-        <div class="row border-bottom text-center">
-          <div class="col-12 col-sm col-md deck-1 daily-deck">
-            <a href="./2018/page.html" target="_blank">
-              <div class="info-cover">
-                <p class="title-cover text-muted">Lorem ipsum dolor sit amet,</p>
-                <span class="author-cover text-muted"><small> <span class="icon-by">by  </span>Lana</small></span>
-              </div>
-            </a>
-          </div>
-          <div class=" col-12 col-sm col-md deck-2 daily-deck">
-            <a href="#" target="_blank">
-              <div class="info-cover">
-                <p class="title-cover text-muted">Lorem ipsum dolor sit amet,</p>
-                <span class="author-cover text-muted"><small> <span class="icon-by">by  </span>John</small></span>
-              </div>
-            </a>
-          </div>
-          <div class=" col-12 col-sm col-md deck-3 daily-deck">
-            <a href="#" target="_blank">
-              <div class="info-cover">
-                <p class="title-cover text-muted">Lorem ipsum dolor sit amet,</p>
-                <span class="author-cover text-muted"><small> <span class="icon-by">by  </span>Heri</small></span>
-              </div>
-            </a>
-          </div>  
-          <div class="col-12 col-sm col-md deck-4">
-            <a href="#" target="_blank">
-              <div class="info-cover">
-                <p class="title-cover text-muted">Lorem ipsum dolor sit amet,</p>
-                <span class="author-cover text-muted"><small> <span class="icon-by">by  </span>Sira</small></span>
-              </div>
-            </a>
-          </div>  
-                
-        </div>  
-      </div>
-    </section>
-    <!--WEEKLY ARTICLES CONTENT-->  
-    <section>
-      <div class="weekly-articles">
+    </div>
+  </section>
+
+    <!--NAVBAR-->
+    <nav class="navbar fixed navbar-transparent navbar-light  navbar-expand-lg navbar-expand-md font-dosis">
         <div class="container">
-          <div class="box-head">
-            <h4 class="text-uppercase font-dosis text-center pt-5">weekly articles</h4>
-            <p class="text-center font-open-sans box-head-desc">you have the right to read good contents</p>
-          </div>
-          <div class="row box-book box-1 mt-4">
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item border-right text-center">
-              <a class="my-4 mx-4 book-link" href="#" target="_blank">
-                <div class="text-center font-open-sans">
-                  <small class="light-grey-font font-dosis-small">MAGAZINE</small></br>
-                  <h5 class="text-uppercase lead pt-3" style="color: #333;">emotion boost</h5></br>
-                  <small style="color: #00c3bd;"><span>#mondayboost </span><span>#energy </span></small></br>
-                  <p  class="by light-grey-font"><small> <span class="icon-by">by  </span>Sira</small></p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item border-right">
-              <div class="my-4">
-                <small class="light-grey-font ml-4 font-dosis-small">TABLE OF CONTENT</small></br>
-                <ul class="light-grey-font font-open-sans">
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Where is the love from?</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Practice mindefulness</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Meaningful zen habit</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Mantra for your pain</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Live the fullest</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Practice mindefulness</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Meaningful zen habit</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Mantra for your pain</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Live the fullest</small></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item border-right first-image-book">
-              <a href="#" target="_blank"></a>
-            </div>
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item">
-              <a href="#" target="_blank" class="book-link">
-                <div class="my-4 mx-2">
-                  <h6 class="font-dosis-small light-grey-font">[ESPISODE 2] LIFE OF TREE</h6>
-                  <div>
-                    <small class="light-grey-font font-open-sans">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                      eaque ipsa quae ab
-                    </small>
-                  </div>
-                  <div class="article-bottom">
-                    <img class="author-icon" src="http://t1.daumcdn.net/brunch/service/user/FQU/image/JTz2i33DciG8C61208M8qLdo8bg.jpg">
-                  </div>  
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="row box-book box-2 mt-4">
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item border-right text-center">
-              <a class="my-4 mx-4 book-link" href="#" target="_blank">
-                <div class="text-center font-open-sans">
-                  <small class="light-grey-font font-dosis-small">MAGAZINE</small></br>
-                  <h5 class="text-uppercase lead pt-3" style="color: #333;">TRAVEL LIFESTYLE</h5></br>
-                  <small style="color: #00c3bd;"><span>#placetogo </span><span>#freelife </span></small></br>
-                  <p  class="by light-grey-font"><small> <span class="icon-by">by  </span>Nick</small></p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item border-right">
-              <div class="my-4">
-                <small class="light-grey-font ml-4 font-dosis-small">TABLE OF CONTENT</small></br>
-                <ul class="light-grey-font font-open-sans">
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Where is the love from?</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Practice mindefulness</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Meaningful zen habit</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Mantra for your pain</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Live the fullest</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Practice mindefulness</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Meaningful zen habit</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Mantra for your pain</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Live the fullest</small></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item border-right">
-              <a href="#" target="_blank" class="book-link">
-                <div class="my-4 mx-2">
-                  <h6 class="font-dosis-small light-grey-font">WHERE DO YOU WANT TO GO?</h6>
-                  <div class="hea">
-                    <small class="light-grey-font font-open-sans">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                      eaque ipsa quae ab
-                    </small>
-                  </div>
-                  <div class="article-bottom">
-                    <img class="author-icon" src="http://t1.daumcdn.net/brunch/service/user/1PAP/image/oSUJe6-hH7suTEoa_1Gt9ZQ8sn4.jpg">
-                  </div>  
-                </div>
-              </a>
-            </div>
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item text-center second-image-book"></div>
-          </div>
-          <div class="row box-book box-3 mt-4">
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item border-right text-center">
-              <a class="my-4 mx-4 book-link" href="#" target="_blank">
-                <div class="text-center font-open-sans">
-                  <small class="light-grey-font font-dosis-small">MAGAZINE</small></br>
-                  <h5 class="text-uppercase lead pt-3" style="color: #333;">MANGA LIFE</h5></br>
-                  <small style="color: #00c3bd;"><span>#japanesemanga </span><span>#readeveryday </span></small></br>
-                  <p  class="by light-grey-font"><small> <span class="icon-by">by  </span>Inuyasha</small></p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item border-right text-center third-image-book"></div>
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item border-right">
-              <div class="my-4">
-                <small class="light-grey-font ml-4 font-dosis-small">TABLE OF CONTENT</small></br>
-                <ul class="light-grey-font font-open-sans">
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Where is the love from?</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Practice mindefulness</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Meaningful zen habit</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Mantra for your pain</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Live the fullest</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Practice mindefulness</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Meaningful zen habit</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Mantra for your pain</small></a></li>
-                  <li><a href="#" target="_blank" class="light-grey-font book-link"><small>Live the fullest</small></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg col-md-6 col-sm-12 col-12 box-item">
-              <a href="#" target="_blank" class="book-link">
-                <div class="my-4 mx-2">
-                  <h6 class="font-dosis-small light-grey-font">WHERE DO YOU WANT TO GO?</h6>
-                  <div class="hea">
-                    <small class="light-grey-font font-open-sans">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                      eaque ipsa quae ab
-                    </small>
-                  </div>
-                  <div class="article-bottom">
-                    <img class="author-icon" src="http://t1.daumcdn.net/brunch/service/guest/image/87w3IshJ6YmhC7hvO2MGaDQfs_w">
-                  </div>  
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--GET IN TOUCH-->
-    <section id="getInTouchForm">
-      <div class="container">
-        <div class="section-heading">
-          <h4 class="text-uppercase text-center pb-5 font-dosis">get in touch</h4>
-        </div>
-        <div class="row">
-          <div class="col-md-1 col-sm-1"></div>
-          <div class="col-md-4 col-sm-12">
-            <div class="content-box my-4">
-              <div class="content-box-icon">
-                <i class="fa fa-paper-plane"></i>
-              </div>
-              <h6 class="content-box-title text-uppercase font-dosis mb-3">say hello</h6>
-              <span class="font-open-sans grey-font">Email: admin@zenlab.com </span>
-              </br>
-              <span class="font-open-sans grey-font">Skype: zenlab</span>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <form>
-              <div class="form-group">
-                <input type="text" class="form-control text-uppercase" placeholder="Name*">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control text-uppercase" aria-describedby="emailHelp" placeholder="Your Email*">
-              </div>
-              <div class="form-group">
-                <textarea name="your-message" class="form-control text-uppercase" cols="50" rows="7" placeholder="Message*"></textarea>
-              </div>
-              <div class="text-center">
-                <input type="submit" value="Send" class="btn btn-block send-button text-uppercase">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--fOOTER AND SOCIAL-->
-    <footer>
-      <div class="blog-avatar">
-        <img class="blog-icon" src="http://t1.daumcdn.net/brunch/service/guest/image/87w3IshJ6YmhC7hvO2MGaDQfs_w">
-      </div>
-      <div class="container inner-footer">
-        <div class="row">
-          <span></span>
-          <div class="area-quotation col-12 col-md-12 text-center pt-5">
-            <h5 class="lead font-dosis-small">Enjoy your reading</h5>
-          <small class="font-italic font-dosis-small">and enjoy your life</small>
-          </div>
-        </div>  
-          <!--bottom list-->
-        <div class=" bottom-list row">
-          <div class="list-social-icon col-6 col-md">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+          <!--ICON NAV-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--NAV-ITEMS-->
+          <div id="navbarToggler" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ml-3 pt-1">
+                <a class="nav-link text-uppercase home-navItem" href="#">home</a>
+              </li>
+              <li class="nav-item ml-3 pt-1">
+                <a class="nav-link text-uppercase" href="#about-me-area">about</a>
+              </li>
+              <li class="nav-item ml-3 pt-1">
+                <a class="nav-link text-uppercase" href="#portfolio">portfolio</a>
+              </li>
+              <li class="nav-item ml-3 pt-1">
+                  <a class="nav-link text-uppercase" href="./projects/bootstrap-blog/index.html" target="_blank">blog</a>
+                </li>
+              <li class="nav-item ml-3 pt-1">
+                <a class="nav-link text-uppercase" href="#">contact</a>
+              </li>
             </ul>
           </div>
-          <div class="txt-copyright col-6 col-md text-right">
-            <small> 
-              <a href="#" target="_blank" class="text-muted font-italic font-dosis-small"> &copy; Zen Lab </a>
-            </small>
-          </div>  
         </div>
-         <!--/bottom list-->
+      </nav>
+
+  <!--ABOUT ME-->
+  <section id ="about-me-area">
+    <div class="container">
+      <div class="row about-me text-center">
+        <div class="about-text col-12 col-sm-12 col-md-8 col-lg-9 mx-auto">
+          <h4 class="about-title text-uppercase font-dosis">a<span class="underline">bout m</span>e</h4>
+          <p class="font-open-sans about-me-content">
+            I am former procurement analyst turned web designer, who’s making the Internet a more beautiful and positive place! I have serious passion for designing and coding <span class="text-uppercase">beautiful simple</span> things.</br> And god! I love what I do!
+          </p>
+        </div>
       </div>
-    </footer>
-    <!--bootstrap & jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!--js link-->
-    <script src="./script.js"></script>
-  </body>
-</html>
+    </div>
   
+  <!--SKILL AREA-->
+    <div class="container ">
+      <div class="row text-center">
+        <div class="col-lg-1"></div>
+        <div class="col-11 col-sm-12 col-md-5 col-lg-4 skill-column skill-texts py-5 mb-3 mx-auto">
+          <div class="skill-inner-div">
+            <figure>
+              <i class="fa fa-pencil fa-3x skill-blue-text"></i>
+            </figure>
+            <h1 class="skill-title font-dosis text-dark my-3 text-uppercase">Design</h1>
+            <p class="skill-texts my-4">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+            <p class="skill-blue-text">Things I enjoy designing:</p>
+            <p>UX, UI, Web, Mobile, Apps, Logos</p>
+            <p class="skill-blue-text">Design Tools:</p>
+            <ul class="list-unstyled">
+              <li>Balsamiq Mockups</li>
+              <li class="mt-2">Sketch</li>
+              <li class="mt-2">Zeplin</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-11 col-sm-12 col-md-5 col-lg-4 skill-column skill-texts py-5 mb-3 mx-auto">
+          <div class="skill-inner-div">
+            <figure>
+              <i class="fa fa-code fa-3x skill-blue-text"></i>
+            </figure>
+            <h1 class="skill-title font-dosis text-dark my-3 text-uppercase">Front-end</h1>
+            <p class="skill-texts my-4">I tend to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            <p class="skill-blue-text">Languages I speak:</p>
+            <p>HTML, CSS, Javascript</p>
+            <p class="skill-blue-text">Dev Tools:</p>
+            <ul class="list-unstyled">
+              <li>VS code, Atom</li>
+              <li class="mt-2">Bootstrap4</li>
+              <li class="mt-2">Codepen</li>
+              <li class="mt-2">Github</li>
+              <li class="mt-2">Git</li>
+              <li class="mt-2">Terminal</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+  </section>
+  <!--PORTFOLIO-title-->
+  <section id="portfolio-title">
+    <!-- <a style="float:right; background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system; BlinkMacSystemFont; &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@rawpixel?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from rawpixel"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">rawpixel</span></a> -->
+    <a href="#" class="px-auto my-auto" target="_blank">
+      <div class="inner-content text-center text-white">
+        <h1 class="port-big-text font-dosis text-uppercase">What I Have Done So Far</h1>
+        <p class="port-small-text">#with my coffee</p>
+      </div>
+    </a>
+  </section>
+  <!--PORTFOLIO MAIN-->
+  <section id="portfolio">
+    <div class="container">
+      <div class="row project-grid">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 at-coderschool text-center">
+          <h4 class="font-dosis text-uppercase">p<span class="underline">roject</span>s</h4>
+        </div>
+        <!-- zen lab homepage -->
+        <div class="item-1 col-11 col-sm-12 col-md-5 col-lg-4 project-item d-flex align-items-center text-center mx-auto">
+          <div class="item-1-hide mx-auto">
+            <div>
+              <h5 class="text-uppercase font-dosis">ZenLab homepage</h5>
+              <p>Responsive blog (homepage) with Bootstrap4,  place for authors to make everything by writing.</p>
+              <p>HTML + CSS</p>
+            </div>
+            <a class="btn mx-auto text-uppercase" href="./projects/bootstrap-blog/index.html" target="_blank">learn more</a>
+          </div>
+        </div>
+        <!-- zenlab blog page -->
+        <div class="item-2 col-11 col-sm-12 col-md-5 col-lg-4 project-item d-flex align-items-center text-center mx-auto">
+          <div class="item-2-hide mx-auto">
+            <div>
+              <h5 class="text-uppercase font-dosis">ZenLab blog page</h5>
+              <p>Responsive blog page with Bootstrap4, place to share author 's articles.</p>
+              <p>HTML + CSS + JavaScript</p>
+            </div>
+            <a class="btn mx-auto text-uppercase" href="./projects/bootstrap-blog/page.html" target="_blank">learn more</a>
+            </div>
+        </div>
+        <!-- URI chatapp -->
+        <div class="item-3 col-11 col-sm-12 col-md-5 col-lg-4 project-item d-flex align-items-center text-center mx-auto">
+          <div class="item-3-hide mx-auto">
+            <div>
+              <h5 class="text-uppercase font-dosis">URI CHATAPP</h5>
+              <p>Simple chat application on browser generating random conversations</p>
+              <p>JavaScript + Jquery</p>
+            </div>
+            <a class="btn mx-auto text-uppercase" href="./projects/URI-chatapp/index.html" target="_blank">learn more</a>
+          </div>
+        </div>
+        <!-- grab landing-page -->
+        <div class="item-4 col-11 col-sm-12 col-md-5 col-lg-4 project-item d-flex align-items-center text-center mx-auto">
+          <div class="item-4-hide mx-auto">
+            <div>
+              <h5 class="text-uppercase font-dosis">grab landing page</h5>
+              <p>The landing page of Grab</p>
+              <p>HTML + CSS</p>
+            </div>
+            <a class="btn mx-auto text-uppercase" href="./projects/grab/index.html" target="_blank">learn more</a>
+          </div>
+        </div>
+        <!-- quote generator -->
+        <div class="item-5 col-11 col-sm-12 col-md-5 col-lg-4 project-item d-flex align-items-center text-center mx-auto">
+          <div class="item-5-hide mx-auto">
+            <div>
+              <h5 class="text-uppercase font-dosis">Random quote generator</h5>
+              <p>A random quote generator to inspire you everyday</p>
+              <p>Javascript + Jquery</p>
+            </div>
+            <a class="btn mx-auto text-uppercase" href="./projects/random-quote-machine/index.html" target="_blank">learn more</a>
+          </div>
+        </div>
+        <!-- coderschool pricing page -->
+        <div class="item-6 col-11 col-sm-12 col-md-5 col-lg-4 project-item d-flex align-items-center text-center mx-auto">
+          <div class="item-6-hide mx-auto">
+            <div>
+              <h5 class="text-uppercase font-dosis">CoderSchool pricing page</h5>
+              <p>Responsive pricing page of CoderSchool, built by Bootstrap4</p>
+              <p>HTML + CSS</p>
+            </div>
+            <a class="btn mx-auto text-uppercase" href="./projects/coderschool-pricing-page/index.html" target="_blank">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BLOG -->
+  <section id="testimonials"></section>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <div class="container text-center">  
+      <div class="row">
+        <div class="quote col-12 col-md-12 text-center">
+          <h5 class="font-dosis lead pt-3">Want to create something great together?</h5>
+          <small class="font-italic font-dosis">We should have a chat, I will buy the coffee.</small>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 text-center my-5">
+            <a href="#" target="_blank" class="btn mx-auto font-weight-light"> Let 's do this!</a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="social-icon-list list-unstyled list-inline mb-5">
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-product-hunt"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-angellist"></i></a></li>
+          </ul>
+        </div>
+        <div class="foot-bottom font-dosis col-12 col-sm-12 col-md-12 col-lg-12">
+          <small> &copy; 2018 in HCMC</small> </br>
+          <small> 
+            Handcrafted by <a href="https://winnie1312.github.io/" target="_blank" class="link-unstyled">Winnie</a> with <i class="fa fa-coffee"></i> and <i class="fa fa-music"></i> 
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--bootstrap & jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
