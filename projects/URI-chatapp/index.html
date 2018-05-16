@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <div class="chatapp-background">
+      <div class="top">
+        <div class="avatar">
+          <img class="image-circle" src="images/woori.png" alt="woori">
+        </div>
+        <div class="name">
+          <p>Uri</p>
+        </div>
+      </div>
+
+      <div class="chat-area">
+        <div class="auto-message first-sentence"><img id="icon" src="images/woori.png"><span class="auto-text">Hello my name is Uri, and you?</span></div>
+      </div>
+
+      <div class="chat-input">
+        <form action="" id="message-form">
+            <textarea placeholder="Type a message..." id="message-box" name="chatuser" resize:"none" minlength="2"></textarea>
+            <!--send button-->
+            <button id="message-submit" type="submit">send</button>
+        </form>
+      </div>
+
+    </div>
+    <!--jquery library goes here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--JS link goes here-->
+    <script src="script.js"/></script>
+  </body>
+</html>

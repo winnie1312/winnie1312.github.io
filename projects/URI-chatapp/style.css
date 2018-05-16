@@ -1,0 +1,147 @@
+.chatapp-background {
+  border-radius: 10px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #b3ecff;
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+  -webkit-box-shadow: 1px 4px 20px 1px #ccc;
+  -moz-box-shadow:    1px 4px 20px 1px #ccc;
+  box-shadow:         1px 4px 20px 1px #ccc;
+}
+
+/* top */
+.top {
+  margin: 0 auto;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  z-index: 5;
+}
+
+/* picture */
+.avatar {
+  height: 80px;
+  width: 80px;
+  z-index: 5;
+}
+
+.image-circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+/* icon in chat-area */
+#icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* Name */
+.name {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 35px;
+  margin-left: 5px;
+}
+
+/* chat area */
+.chat-area {
+  margin: 0 auto;
+  height: 600px;
+  padding-top: 1em;
+  overflow: auto;
+}
+
+.first-sentence {
+  margin-top: 20px;
+}
+
+.new-message {
+  margin-bottom: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: auto;
+}
+
+.auto-message {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: auto;
+}
+
+.user-text {
+  padding: 0.5em 0.5em;
+  background-color: #ffff00;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  float: right;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.auto-text {
+  padding: 0.5em 0.5em;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.chat-input {
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+#message-form {
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+#message-box {
+  background: none;
+  width: 70%;
+  border: none;
+  outline: none!important;
+  resize: none;
+  height: 14px;
+  padding: 10px;
+  font-size: 14px;
+  overflow-y: hidden;
+  color: black;
+}
+
+button {
+  background: none;
+  width: 20%;
+  float: right;
+  border: none;
+  outline: none!important;
+  resize: none;
+  height: 14px;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px;
+  color: #00ace6;
+}
+
+button:hover {
+  color: black;
+}
