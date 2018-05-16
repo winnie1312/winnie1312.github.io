@@ -1,0 +1,104 @@
+
+#wrapper {
+  background-color: #478787;  
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+}
+
+.box {
+width: 35%;
+background-color: #fff;
+border-radius: 10px;
+margin: 0 auto;
+margin-top: 250px;
+}
+
+.invisible-box {
+  padding: 30px;
+}
+
+.quote-author {
+padding: 20px 5px 20px 5px;
+}
+
+#quote {
+  font-size: 30px;
+  color: #478787;
+}
+
+#author {
+  margin-right: 20px;
+  margin-top: 20px;
+  color: #478787;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.social-icons {
+display: inline-block;
+}
+
+.icons {
+  color: #fff;
+  
+
+}
+
+.tweet-button {
+  border: none;
+  outline: none;
+  background-color: #478787;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-left: 5px;
+}
+.tweet-button:hover {
+  opacity: 0.8;
+}
+
+.new-quote-button {
+  float: right;
+}
+
+.click-button {
+  background-color: #478787;
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 20px;
+  border: none;
+  margin-bottom: 0;
+  margin-right: 5px;
+  outline: none;
+}
+
+.click-button:hover {
+  opacity: 0.8;
+}
+
+.bottom {
+ margin-top: 10px;
+ color: #fff;
+}
+
+/* colors change slowly */
+.backgroundColor {
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+.changedColor {
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
+#winnie {
+  color: #fff;
+  text-decoration: none;
+}
+#winnie:hover {
+  opacity: 0.8;
+}
