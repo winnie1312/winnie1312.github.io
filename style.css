@@ -54,8 +54,9 @@ table {
 
 /* NAV */
 nav {
-  background-color: #333;
+  background-color: #1B242F;
   position: absolute;
+  border-bottom: 3px solid #00C3BD;
 }
 
 /* fix nav when scroll */
@@ -74,13 +75,14 @@ nav {
   letter-spacing: 4px;
 }
 
-a.home-navItem {
-  color: #00C3BD !important;
-}
-
 .nav-item a:hover {
   color: #00C3BD !important;
 }
+
+.nav-link.active {
+  color: #00C3BD !important;
+}
+
 #navbarToggler {
   letter-spacing: 2px;
   font-family: 'Open Sans', sans-serif;
@@ -89,34 +91,78 @@ a.home-navItem {
 
 
 /* HERO IMAGE */
-#hero-image {
-  /* background-image: url("http://www.sergushkin.com/wp-content/uploads/2017/03/@1xBanner_2-Copy-3.png"); */
-  background-image: url("./img/lauren-mancke-60627-unsplash.jpg");
-  opacity: 0.8;
+section.hero-image {
+  /* opacity: 0.8; */
   height: 850px;
-  width: 100%;
+  position: relative;
+}
+
+.photo-outer-div {
+  position: absolute !important;
+  bottom: 40%;
+}
+.photo {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-image: url("./img/photo.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden; 
-  position: relative;
+ 
 }
 
 .hero-text {
-  position: absolute;
+  position: absolute !important;
   bottom: 15%;
   width: 100%;
 }
 .hero-text h1 {
   letter-spacing: 30px;
   font-size: 50px !important;
+  color: #00C3BD;
 }
 
 .hero-text h5 {
   letter-spacing: 5px;
   font-size: 18px !important;
   line-height: 25px;
+  color: #fff;
 }
+
+
+/* particles */
+
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1B242F;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-left: -15px;
+  margin-right: -15px;
+  opacity: 0.95;
+}
+
+
 
 /* ABOUT ME */
 #about-me-area {
@@ -328,7 +374,7 @@ h4.about-title {
 footer {
   padding-top: 100px;
   height: 650px;
-  background-color: #333;
+  background-color: #1B242F;
   position: relative;
   color: #fff;
 }
@@ -431,6 +477,10 @@ footer p.btn:hover {
   }
   .social-icon-list i.fa {
     font-size: 14px;
+  }
+
+  .photo-outer-div {
+    bottom: 50%;
   }
 }
 
