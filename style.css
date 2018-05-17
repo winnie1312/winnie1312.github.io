@@ -200,8 +200,15 @@ h4.about-title {
   color: #777;
   font-size: 16px;
   line-height: 25px;
-  letter-spacing: 1px;
+  word-spacing: 1px;
+  /* letter-spacing: 1px; */
 }
+
+.about-name {
+  font-size: 25px;
+  color: #777;
+}
+
 /* SKILL AREA */
 .skill-title {
   font-size: 20px;
@@ -395,8 +402,12 @@ footer p.btn:hover {
   color: #fff;
 }
 /* </CONTACT FORM> */
-.quote h5, .quote small {
+.quote h3, .quote p {
   letter-spacing: 3px;
+}
+.quote .bigger {
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .foot-bottom {
@@ -486,5 +497,3 @@ footer p.btn:hover {
     bottom: 50%;
   }
 }
-
-
