@@ -92,7 +92,7 @@ $(document).ready(function(){
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 50, 
+        "value": 60, 
         "density": {
           "enable": true,
           "value_area": 800
