@@ -47,7 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+
 /* start CSS */
+.disable-hover {
+  pointer-events: none;
+}
 .font-dosis {
   font-family: 'Dosis', sans-serif;
 }
@@ -381,6 +385,35 @@ h4.about-title {
 }
 
 /* FOOTER */
+
+/* animation slide */
+.getInTouch-animated {
+  animation-delay :     0.5s;
+  -webkit-animation-delay :  0.5s;
+  -moz-animation-delay :     0.5s;
+}
+
+.quote {
+  animation-delay :     0.8s;
+  -webkit-animation-delay :  0.8s;
+  -moz-animation-delay :     0.8s;
+  
+}
+
+.contact-animated {
+  animation-delay :     1s;
+  -webkit-animation-delay :  1s;
+  -moz-animation-delay :     1s;
+}
+
+.icons-animated {
+  animation-delay :     1.2s;
+  -webkit-animation-delay :  1.2s;
+  -moz-animation-delay :     1.2s;
+}
+
+
+
 footer {
   padding-top: 100px;
   height: 650px;

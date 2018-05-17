@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //navbar fixed-top
   $(window).on("scroll", function() { 
     if($(window).scrollTop() > 900) {
       $(".fixed").addClass("active");
@@ -13,43 +14,24 @@ $(document).ready(function(){
     $(this).addClass('active');
   });
 
-
-
-  
   // hover project items
   $('.item-1, .item-2, .item-3, .item-4, .item-5, .item-6').hover(function() {
     $(this).addClass('background-hide');
     $(this).children().addClass('hovered');
-
-
-    // $(this).children().removeClass("animated fadeInUp");
     $(this).children().children('div').addClass("animated fadeInDown");
     $(this).children().children('a').addClass("animated fadeInUp");
-
-
     }, function() {
+    $(this).children().children('div').removeClass("animated fadeInDown");
+    $(this).children().children('a').removeClass("animated fadeInUp"); 
     $(this).removeClass('background-hide');
     $(this).children().removeClass('hovered');
-
-
-    $(this).children().children('div').removeClass("animated fadeInDown");
-    $(this).children().children('div').addClass("animated fadeInUp");
-    
-    $(this).children().children('a').removeClass("animated fadeInUp");
-    $(this).children().children('a').addClass("animated fadeInDown");
-
   });
-
   // mailto
   $("#email-me").on("click", function() {
-    // window.open('mailto:nhuphan0404@gmail.com');
     window.location.href = 'mailto:nhuphan0404@gmail.com';
   })
-  
- 
 
-
-  /* move to nav item target */
+   //move to nav item target 
   $(".about-navItem").on("click", function() {
     $('html, body').animate({
       scrollTop: $("#about-me-area").offset().top
@@ -71,171 +53,156 @@ $(document).ready(function(){
     $(".navbar-collapse").removeClass("show");
 
   });
-
-
-  // $(window).on("scroll", function () {
-  //   $(".slide-left-h4, .slide-icons").addClass("animated slideInLeft");
-  //   $(".quote, .slide-right-h4").addClass("animated slideInRight");
-  //   $(".contact-animated").addClass("animated bounceIn");
-  // });
-
-
-  // scroll down the site
+  //when scrolling
   $(window).on("scroll", function () {
-    // console.log('TEST', $("#portfolio").position().top, $(window).scrollTop());
-    if($("#portfolio").position().top < $(window).scrollTop() + 700) {
-      console.log('helloo!!!!');
-      $(".project-animated").addClass("animated slideInRight");
+    // <disable hover>
+    let body = document.body,
+        timer;
+    window.addEventListener('scroll', function() {
+      clearTimeout(timer);
+      if(!body.classList.contains('disable-hover')) {
+      body.classList.add('disable-hover')
+      };
+      timer = setTimeout(function(){
+      body.classList.remove('disable-hover')
+      },500);
+    }, false);
+    // </disable hover>
 
-      let x = 500;
-      // $(".project-item").hide();
-        $(".project-item").each(function(){
-          console.log("hi",x);
-          setTimeout(function() {
-            $(".project-item").show();
-          }, x += 3000); 
-        });  
-      
-
-      
-      
-    }
-    
-
-  
-
-
-
-  });
-
-
-  $(window).on("scroll", function () {
+    // about-me &skill area
+    $(".title-animated").addClass("animated slideInLeft");
+    $(".about-me-content").addClass("animated slideInRight");
     $(".column-left").addClass("animated slideInLeft");
     $(".column-right").addClass("animated slideInRight");
-  });
- 
+    //portfolio area
+    if($("#portfolio-title").position().top < $(window).scrollTop() + 700) {
+      $(".inner-content").addClass("animated slideInRight");
+      $(".project-grid").addClass("animated slideInLeft");
+    };
+    //footer area
+    if($("#contact").position().top < $(window).scrollTop() +700) {
+      $(".getInTouch-animated").addClass("animated slideInRight");
+      $(".quote").addClass("animated slideInLeft");
+      $(".contact-animated").addClass("animated slideInRight");
+      $(".icons-animated").addClass("animated slideInLeft");
+    };
+  })
 
-
-// particles  
-/* ---- particles.js config ---- */
-
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 50, 
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#fff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#fff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
+  // particles  
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 50, 
+        "density": {
+          "enable": true,
+          "value_area": 800
         }
       },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
+      "color": {
+        "value": "#fff"
       },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.1
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
       },
-      "push": {
-        "particles_nb": 4
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
       },
-      "remove": {
-        "particles_nb": 2
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#fff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
       }
-    }
-  },
-  "retina_detect": true
-});
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 140,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.1
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
 
+})
+  
+  
   
 
-
-});
-  
-  
-  
-  
   
